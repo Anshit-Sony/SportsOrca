@@ -1,12 +1,87 @@
-# React + Vite
+# SportsOrca
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**SportsOrca** is a React-based web application that displays upcoming football matches fetched from a free football API. Users can search for matches by team names using a live search feature integrated into the navbar.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+* Fetches upcoming football matches from a public API
+* Displays match cards with teams, date/time, and league info
+* Live search filter to find matches by home or away team
+* Responsive grid layout using Tailwind CSS
+* Clean and modern UI with smooth hover effects
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Demo
+
+Add your live demo URL here if available.
+
+---
+
+## Screenshots
+
+Include screenshots of the app here to showcase UI.
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/sportsorca.git
+cd sportsorca
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm start
+```
+
+The app will run at `http://localhost:3000`.
+
+---
+
+## Usage
+
+* The navbar contains a search input to filter matches by team names.
+* Matches are displayed in cards showing home vs away teams, match date/time, and league info.
+* The list updates live as you type in the search box.
+
+---
+
+## Project Structure
+
+```
+/src/API/Football_API.js          # Functions to fetch match data from the football API
+/src/context/MatchProvider.js     # React Context for managing match and search state globally
+/src/components/Navbar.jsx        # Navbar with search input component
+/src/components/UpcomingMatches.jsx  # Component displaying upcoming matches with filtering
+/src/App.jsx                      # Main app entry component
+```
+
+---
+
+## Technologies Used
+
+* React
+* React Context API for state management
+* Tailwind CSS for styling
+* Fetch API for data requests
+
+---
+
+## Notes
+
+* Uses a free football API with limited data; plan restrictions apply.
+* Make sure to add your own API key in `/src/API/Football_API.js` if needed.
+* Search is case-insensitive and filters on both home and away teams.
