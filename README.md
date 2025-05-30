@@ -14,17 +14,6 @@
 
 ---
 
-## Demo
-
-Add your live demo URL here if available.
-
----
-
-## Screenshots
-
-Include screenshots of the app here to showcase UI.
-
----
 
 ## Installation
 
